@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpod
+spec:
+  containers:
+    - name: shell
+      image: "{{.Image}}"
+      command: ["mysqlsh", "--js", "-e", "os.sleep(600)"]

@@ -1,0 +1,16 @@
+apiVersion: mysql.oracle.com/v2
+kind: InnoDBCluster
+metadata:
+  name: {{.ClusterName}}
+spec:
+  instances: 2
+  router:
+    instances: 1
+  secretName: mypwds
+  edition: community
+  tlsUseSelfSigned: true
+  version: "{{.ServerVersion}}"
+  baseServerId: 3210
+  mycnf: |
+    [mysqld]
+    admin_port=3333

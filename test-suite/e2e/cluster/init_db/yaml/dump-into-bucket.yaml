@@ -1,0 +1,7 @@
+apiVersion: mysql.oracle.com/v2
+kind: MySQLBackup
+metadata:
+  name: {{.DumpName}}
+spec:
+  clusterName: mycluster
+  backupProfileName: {{.BackupProfileName}}

@@ -1,0 +1,24 @@
+{
+	"k8s": {
+		"kubeConfig": "~/.kube/config",
+		"environment": "k3d",
+		"clusterName": "ote-golang"
+	},
+	"images": {
+		"registry": "registry.localhost:5000"
+	},
+	"minikube": {
+		"registryInsecure": false
+	},
+	"operator": {
+		"pullPolicy": "Always"
+	},
+	"enterprise": {
+		"enable": true
+	},
+	"oci": {
+		"enable": true,
+		"configPath": "/home/oci-user/.oci/config",
+		"bucketName": "my-bucket"
+	}
+}

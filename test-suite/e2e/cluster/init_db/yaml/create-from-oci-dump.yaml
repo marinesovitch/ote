@@ -1,0 +1,19 @@
+apiVersion: mysql.oracle.com/v2
+kind: InnoDBCluster
+metadata:
+  name: newcluster
+spec:
+  instances: 1
+  router:
+    instances: 1
+  secretName: newpwds
+  tlsUseSelfSigned: true
+  baseServerId: 2000
+  initDB:
+    dump:
+      name: {{.DumpName}}
+      storage:
+        ociObjectStorage:
+          prefix : {{.OciStoragePrefix}}
+          bucketName: {{.BucketName}}
+          credentials: {{.OciCredentialsRestore}}

@@ -1,0 +1,26 @@
+[
+	{
+		"item": "shell",
+		"image": "mysql/mysql-shell:8.0.24",
+		"id": "",
+		"pull": "true"
+	},
+	{
+		"item": "shell-commercial",
+		"image": "mysql/mysql-shell-commercial:8.0.24",
+		"id": "",
+		"pull": "true"
+	},
+	{
+		"item": "router",
+		"image": "mysql/mysql-router:8.0.24",
+		"id": "",
+		"pull": "true"
+	},
+	{
+		"item": "server",
+		"image": "mysql/mysql-server:8.0.24",
+		"id": "",
+		"pull": "true"
+	},
+]

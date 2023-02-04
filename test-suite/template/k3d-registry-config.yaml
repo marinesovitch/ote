@@ -1,0 +1,10 @@
+mirrors:
+    "docker.io":
+        endpoint:
+            - http://{{.Registry}}
+    "ghcr.io":
+        endpoint:
+            - http://{{.Registry}}
+    "{{.Registry}}":
+        endpoint:
+            - http://{{.Registry}}

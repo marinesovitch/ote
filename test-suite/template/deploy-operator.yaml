@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-operator
+  namespace: mysql-operator
+spec:
+  template:
+    spec:
+      containers:
+        - name: mysql-operator
+          image: {{.Image}}
+          imagePullPolicy: {{.PullPolicy}}
+          env:
+            - name: MYSQL_OPERATOR_DEFAULT_REPOSITORY
+              value: {{.RegistryRepository}}
+            - name: MYSQL_OPERATOR_IMAGE_PULL_POLICY
+              value: {{.PullPolicy}}
+            - name: MYSQL_OPERATOR_DEBUG
+              value: "{{.DebugLevel}}"

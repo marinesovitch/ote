@@ -1,0 +1,8 @@
+apiVersion: mysql.oracle.com/v2
+kind: InnoDBCluster
+metadata:
+  name: mycluster
+spec:
+  secretName: mypwds
+  tlsUseSelfSigned: true
+  bogus: 1234
