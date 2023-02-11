@@ -27,7 +27,7 @@ The project is divided into the following parts:
 	* [default.cfg](test-suite/default.cfg)
 	* [custom.cfg.sample](test-suite/custom.cfg.sample)
 	* [config.oci.sample](test-suite/config.oci.sample)\
-	More details in section [How to config](##-How-to-config).
+	More details in section [How to config](#how-to-config).
 * temporary files\
 	By default, all temporary files (e.g. generated YAMLs) will be stored in the subdirectory `ote/out/` - it may be changed in configuration (option `testsuite.outputDirectory`).
 
@@ -180,7 +180,7 @@ Besides, the related enterprise images are needed.
 
 ### ote-cli
 
-Check the list of [command line options](###-command-line). The following commands are supported:
+Check the list of [command line options](#command-line). The following commands are supported:
 * start\
 	it starts a (k3d or minikube) cluster and deploys the operator unless the `-skip-deploy` option was applied
 * stop\
