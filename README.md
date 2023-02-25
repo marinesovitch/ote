@@ -10,7 +10,7 @@ In many parts, especially in test cases, it was ported from the python test suit
 
 There are two subdirectories in the project:
 * [test-suite](test-suite/) - the golang test suite of MySQL Operator for Kubernetes - the actual project
-* [mysql-operator](mysql-operator/) - the MySQL Operator for Kubernetes as the only dependency (git submodule)
+* mysql-operator - the MySQL Operator for Kubernetes as the only dependency (git submodule)
 
 ### Test suite structure
 
